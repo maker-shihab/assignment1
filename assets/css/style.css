@@ -1,0 +1,247 @@
+:root {
+  /* FONTS */
+  --primary-font: "Poppins", sans-serif;
+  /* COLORS */
+  --primary-color: #eb4d4b;
+  --title-color: #2f281e;
+  --secondary-color: #ff9900;
+  --defold-color: #173a56;
+}
+/* RESET CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--primary-font);
+  color: var(--title-color);
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/* GLOBAL CSS HERE */
+.cntBox {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+.primaryBtn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+}
+h2.sectionTitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+}
+h2.sectionTitle span {
+  color: var(--secondary-color);
+}
+/* GLOBAL CSS HERE */
+/* THIS IS MAIN CSS HERE */
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 50px 0;
+  column-gap: 100px;
+}
+h1.mainTitle {
+  font-size: 60px;
+  color: #333333;
+  position: relative;
+  font-weight: 400;
+  line-height: 80px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  font-family: "Yeseva One", cursive;
+}
+.mainTitle::after {
+  position: absolute;
+  left: 0px;
+  width: 4px;
+  height: 124px;
+  content: "";
+  top: 17px;
+  background: var(--primary-color);
+}
+.mainTitle span {
+  color: #faa634;
+}
+.miniPragrap,
+.sectionPragrap {
+  font-size: 18px;
+  padding-bottom: 20px;
+  max-width: 90%;
+  font-weight: 400;
+  max-width: 470px;
+  width: 100%;
+}
+.miniPragrap {
+  padding-bottom: 0;
+}
+.headerText .primaryBtn {
+  margin-bottom: 33px;
+}
+.shape {
+  height: 400px;
+  width: 375px;
+}
+/* MISSION AREA CSS HERE */
+.mission {
+  padding: 50px 0;
+}
+.mission_header {
+  padding-bottom: 40px;
+}
+.mission_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+}
+.mission_itemSingle {
+  padding: 25px 13px 45px 24px;
+  background: rgba(79, 157, 166, 0.1);
+  border-radius: 26px;
+}
+.mission_itemSingle img {
+  height: 126px;
+  width: 126px;
+}
+.cardTitle {
+  padding-bottom: 10px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--defold-color);
+  font-size: 24px;
+}
+/* BLOG AREA CSS HERE */
+.blog {
+  padding: 50px 0;
+}
+.blog_single {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 70px;
+}
+.blog_shape {
+  flex: 0 0 40%;
+  position: relative;
+  z-index: 1;
+}
+.blog_shape_position {
+  position: absolute;
+  left: -100px;
+  height: 50%;
+  width: 50%;
+  top: 20%;
+  z-index: -1;
+}
+.blog_title {
+  font-size: 36px;
+  line-height: 54px;
+  padding-bottom: 15px;
+}
+.blog_pragrap {
+  padding-bottom: 20px;
+}
+.blogsingle_two {
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+.blogsingle_two .blog_shape_position {
+  position: absolute;
+  left: inherit;
+  right: -70px;
+  height: 40%;
+  width: 40%;
+  top: inherit;
+  bottom: -50px;
+  z-index: -1;
+}
+.customeArea {
+  padding: 50px 0;
+}
+.contactArea {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+}
+.contact_map iframe,
+.contact_content {
+  width: 450px;
+  height: 320px;
+}
+.form_control button,
+.form_cnntrol input,
+.form_control textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.form_control textarea {
+  height: 120px;
+}
+.form_control button {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+}
+.form_cnntrol input:hover,
+.form_cnntrol input:focus,
+.form_control textarea:hover,
+.form_control textarea:focus {
+  border-color: var(--primary-color) !important;
+  outline: none;
+}
+/* FOOTER */
+footer {
+  padding: 35px 0;
+  text-align: center;
+  background: rgba(11, 13, 23, 1);
+}
+.footerTitle {
+  color: #fff;
+  font-size: 36px;
+}
+.footerTitle span {
+  color: var(--primary-color);
+}
+.footer_content {
+  color: #fff;
+}
